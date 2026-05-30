@@ -71,33 +71,7 @@ export function Skills() {
             })}
           </div>
 
-          {/* Skill Level Indicators */}
-          <div className="mt-16">
-            <h3 className="text-xl font-semibold text-center mb-8">Proficiency Levels</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {[
-                { skill: "HTML/CSS", level: 90 },
-                { skill: "JavaScript", level: 85 },
-                { skill: "React", level: 80 },
-                { skill: "Leadership", level: 95 },
-                { skill: "Project Management", level: 88 },
-                { skill: "Team Collaboration", level: 92 },
-              ].map((item) => (
-                <div key={item.skill} className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span className="font-medium">{item.skill}</span>
-                    <span className="text-muted-foreground">{item.level}%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div
-                      className="bg-gradient-to-r from-accent to-secondary h-2 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${item.level}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
